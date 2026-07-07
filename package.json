@@ -1,0 +1,57 @@
+{
+  "name": "@cinchor/sdk",
+  "version": "0.2.1",
+  "description": "Accountability infrastructure for autonomous agents — bound what an agent can do before it acts, and prove what it did after. Verifiably enough for a regulator, auditor, insurer, or court.",
+  "license": "Apache-2.0",
+  "homepage": "https://cinchor.com",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "type-check": "tsc --noEmit",
+    "clean": "rimraf dist",
+    "smoke": "node --experimental-strip-types examples/full-flow.ts",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "dependencies": {
+    "@omne/sdk": "^2.0.0",
+    "@scure/base": "^1.1.6"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "rimraf": "^5.0.0",
+    "tsup": "^8.0.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.4.0"
+  },
+  "keywords": [
+    "agent",
+    "ai-agent",
+    "authorization",
+    "accountability",
+    "attestation",
+    "audit",
+    "cinchor",
+    "omne"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
