@@ -1,0 +1,24 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "cinchor"
+version = "0.1.0"
+description = "Cinchor SDK — accountability for autonomous agents on Omne (capability + attestation)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Proprietary — (c) DoneUp, Inc. All rights reserved." }
+authors = [{ name = "DoneUp, Inc." }]
+# Cinchor is proprietary IP — NOT open source. No public classifiers.
+dependencies = [
+    # Omne base SDK (post-quantum wallet/ABI/RPC). Until published, install from
+    # the local source: `pip install -e ../../omne/sdk/python`.
+    "omne-sdk>=0.1.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/cinchor"]

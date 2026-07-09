@@ -10,6 +10,16 @@ You `import` a library, wrap your agent's decision and action points, and call t
 npm install @cinchor/sdk
 ```
 
+## Install — TypeScript, Python, Go
+
+| Language | Package | Install |
+|----------|---------|---------|
+| TypeScript / JS | [`@cinchor/sdk`](https://www.npmjs.com/package/@cinchor/sdk) | `npm install @cinchor/sdk` |
+| Python | [`cinchor`](https://pypi.org/project/cinchor/) | `pip install cinchor` |
+| Go | `github.com/cinchor-hq/cinchor-sdk/go` | `go get github.com/cinchor-hq/cinchor-sdk/go` |
+
+The TypeScript SDK (repo root + [`src/`](./src)) is the reference implementation. **Go** ([`go/`](./go)) and **Python** ([`py/`](./py)) are held to it by cross-SDK parity tests — identical capability-id and attestation-hash derivations, so a capability or record produced by one SDK is addressable and verifiable by another. All Apache-2.0.
+
 ## The two verbs
 
 - **`enforce(action)`** — authorize-or-refuse a consequential action. The substrate is the enforcement point: an out-of-scope action commits **no state change**, no matter how the agent reasons, is prompted, or is compromised.
