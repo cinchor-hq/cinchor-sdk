@@ -13,22 +13,21 @@ Plus the capability lifecycle (mint / revoke / update / allow-counterparty) and
 audit reads. Parity-matched with the TS `@cinchor/sdk`: capability ids,
 counterparty keys, context hashes, and addresses derive identically across SDKs.
 
-> Proprietary — © DoneUp, Inc. All rights reserved. Not open source.
+> Apache-2.0 — open source. © 2026 DoneUp, Inc. See [../LICENSE](../LICENSE).
 
 ## Install
 
-Distributed via git (no public registry — Cinchor is proprietary). Both repos
-are private, so this needs git access to `OmneDAO/omne-sdks` + `cinchor-hq/cinchor`.
-Install the Omne base SDK first, then Cinchor:
+Distributed via git (not yet on PyPI). Install the Omne base SDK first, then
+Cinchor from this repo:
 
 ```bash
 # 1) Omne base SDK (dependency)
-pip install "git+ssh://git@github.com/OmneDAO/omne-sdks.git@python/v0.1.0#subdirectory=python"
+pip install "git+https://github.com/OmneDAO/omne-sdks.git@python/v0.1.0#subdirectory=python"
 # 2) Cinchor
-pip install "git+ssh://git@github.com/cinchor-hq/cinchor.git@sdk-py/v0.1.0#subdirectory=sdk-py"
+pip install "git+https://github.com/cinchor-hq/cinchor-sdk.git#subdirectory=py"
 ```
 
-(Use `git+https://…` instead of `git+ssh://…` if your git auth is HTTPS-based.)
+(Use `git+ssh://…` instead if you prefer SSH auth.)
 
 Local development:
 ```bash

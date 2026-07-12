@@ -98,6 +98,5 @@ Cinchor runs on Omne, an independently-governed L1 that supplies the neutral, ve
 
 ## License
 
-Proprietary and confidential. Copyright © 2026 DoneUp, Inc. All rights reserved
-(to vest in Cinchor, LLC upon registration). No rights granted except under a
-separate written agreement. See [LICENSE](./LICENSE).
+Apache-2.0. Copyright © 2026 DoneUp, Inc. See [LICENSE](./LICENSE). The client
+SDK is open source; the managed Cinchor gateway and service remain proprietary.

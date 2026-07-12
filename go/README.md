@@ -7,10 +7,10 @@ Two verbs: `Enforce` (authorize-or-refuse, substrate-enforced) and `Attest`
 Parity-matched with the TS (`@cinchor/sdk`) and Python Cinchor SDKs — ids,
 counterparty keys, context hashes, and addresses derive identically.
 
-> Proprietary — © DoneUp, Inc. All rights reserved. Not open source.
+> Apache-2.0 — open source. © 2026 DoneUp, Inc. See [../LICENSE](../LICENSE).
 
 ```go
-import cinchor "github.com/cinchor-hq/cinchor/sdk-go"
+import cinchor "github.com/cinchor-hq/cinchor-sdk/go"
 ```
 
 ## Quickstart
